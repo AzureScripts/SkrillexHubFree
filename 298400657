@@ -1,0 +1,301 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SkrillexFree = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local AutoKey = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local AutoMeditate = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+SkrillexFree.Name = "SkrillexFree"
+SkrillexFree.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SkrillexFree.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = SkrillexFree
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.Position = UDim2.new(0.599604249, 0, 0.351233661, 0)
+Main.Size = UDim2.new(0, 357, 0, 251)
+
+AutoKey.Name = "AutoKey"
+AutoKey.Parent = Main
+AutoKey.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+AutoKey.Position = UDim2.new(0.606873095, 0, 0.129398257, 0)
+AutoKey.Size = UDim2.new(0, 123, 0, 46)
+AutoKey.Font = Enum.Font.SourceSans
+AutoKey.Text = "Off"
+AutoKey.TextColor3 = Color3.fromRGB(255, 0, 0)
+AutoKey.TextSize = 13.000
+AutoKey.TextWrapped = true
+
+UICorner.Parent = AutoKey
+
+Frame.Parent = AutoKey
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.016260162, 0, -0.413043469, 0)
+Frame.Size = UDim2.new(0, 121, 0, 12)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(44, 44, 44)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(121, 121, 121))}
+UIGradient.Parent = Frame
+
+UICorner_2.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.173398465, 0, -0.346757919, 0)
+TextLabel.Size = UDim2.new(0, 78, 0, 19)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Auto Key Time Chamber"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 12.000
+
+UICorner_3.Parent = Main
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 78, 0, 32)
+TextLabel_2.Font = Enum.Font.SourceSansItalic
+TextLabel_2.Text = "Skrillex#6300"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(44, 44, 44)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(121, 121, 121))}
+UIGradient_2.Parent = Main
+
+AutoMeditate.Name = "AutoMeditate"
+AutoMeditate.Parent = Main
+AutoMeditate.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+AutoMeditate.Position = UDim2.new(0.606873095, 0, 0.456091493, 0)
+AutoMeditate.Size = UDim2.new(0, 123, 0, 46)
+AutoMeditate.Font = Enum.Font.SourceSans
+AutoMeditate.Text = "Off"
+AutoMeditate.TextColor3 = Color3.fromRGB(255, 0, 0)
+AutoMeditate.TextSize = 13.000
+AutoMeditate.TextWrapped = true
+
+UICorner_4.Parent = AutoMeditate
+
+Frame_2.Parent = AutoMeditate
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(0.016260162, 0, -0.413043469, 0)
+Frame_2.Size = UDim2.new(0, 121, 0, 12)
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(44, 44, 44)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(121, 121, 121))}
+UIGradient_3.Parent = Frame_2
+
+UICorner_5.Parent = Frame_2
+
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(-0.00826446246, 0, -0.346758515, 0)
+TextLabel_3.Size = UDim2.new(0, 122, 0, 19)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Auto Meditate (Put Manual)"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 10.000
+TextLabel_3.TextWrapped = true
+
+for _, v in pairs(SkrillexFree:GetDescendants()) do
+	
+	if not v:IsA("TextLabel") then
+		
+		local UiStroke = Instance.new("UIStroke", v)
+		UiStroke.ApplyStrokeMode = "Border"
+		UiStroke.Color = Color3.fromRGB(255, 255, 255)
+		
+	end
+	
+end
+
+-- Scripts:
+
+local function FLKGMYB_fake_script() -- Main.Drag 
+	local script = Instance.new('LocalScript', Main)
+
+	--Credits go to whoever made this script.
+	
+	local UIS = game:GetService("UserInputService")
+	function drag (Frame)
+		dragToggle = nil
+		dragSpeed = 0.23
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	drag(script.Parent)
+	
+end
+coroutine.wrap(FLKGMYB_fake_script)()
+
+local vim = game:GetService("VirtualInputManager")
+local player = game.Players.LocalPlayer
+local hum = player.Character:WaitForChild("Humanoid")
+local healing = false
+
+local autKey = false
+local autMediate
+canPrint = false
+
+local TweenService = game:GetService("TweenService")
+
+local camera = workspace.CurrentCamera
+local tweenInfo = TweenInfo.new(
+	0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out
+)
+
+
+AutoKey.MouseButton1Down:Connect(function()
+
+	if AutoKey.Text == "Off" then
+
+		autKey = true
+		AutoKey.Text = "On"
+		AutoKey.TextColor3 = Color3.fromRGB(38, 255, 0)
+
+	else
+
+		autKey = false
+		AutoKey.Text = "Off"
+		AutoKey.TextColor3 = Color3.fromRGB(255, 0, 0)
+
+	end
+
+end)
+
+AutoMeditate.MouseButton1Down:Connect(function()
+
+	if AutoMeditate.Text == "Off" then
+
+		autMediate = true
+		AutoMeditate.Text = "On"
+		AutoMeditate.TextColor3 = Color3.fromRGB(38, 255, 0)
+
+	else
+
+		autMediate = false
+		AutoMeditate.Text = "Off"
+		AutoMeditate.TextColor3 = Color3.fromRGB(255, 0, 0)
+
+	end
+
+end)
+
+local UIS = game:GetService("UserInputService")
+
+UIS.InputBegan:Connect(function(key, typin)
+	
+	if not typin then
+		
+		if key.KeyCode == Enum.KeyCode.RightControl then
+			
+			if SkrillexFree.Enabled == false then
+				
+				SkrillexFree.Enabled = true
+				
+			else
+				
+				SkrillexFree.Enabled = false
+				
+			end
+			
+		end
+		
+	end
+	
+end)
+
+while task.wait() do
+	if autKey == true and game.PlaceId ~= 298400657 then
+		local str1 = nil
+		local str2 = nil
+
+		for _, v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+
+			if v:FindFirstChild("Key1") then
+
+				str1 = v.Key1
+
+			end
+
+			if v:FindFirstChild("Key2") then
+
+				str2 = v.Key2
+
+			end 
+		end
+
+
+		local newStr1, replaced = string.gsub(str1.Text, " ", " ")
+		local evennewStr1, replaced1 = string.gsub(newStr1, "+", " ")
+		local evennewStr11, replaced1 = string.gsub(evennewStr1, " ", "")
+		local newStr2, replaced2 = string.gsub(str2.Text, " ", " ")
+		local evennewStr2, replaced2 = string.gsub(newStr2, "+", " ")
+		print(evennewStr11 .. " Key1")
+		print(evennewStr2 .. " Key2")
+		vim:SendKeyEvent(true, evennewStr11, false, game)
+		task.wait(0.1)
+		vim:SendKeyEvent(true, evennewStr2, false, game)
+		task.wait(0.1)
+		
+	elseif autMediate == true and game.PlaceId == 298400657 then
+
+			for _, v in pairs(game.Workspace:GetChildren()) do
+				if v.Name == "Part" and v:FindFirstChild("Sound") and not v:FindFirstChild("BillboardGui") and not v:FindFirstChild("alreadyClicked") then
+
+					local tween = TweenService:Create(camera, tweenInfo, {CFrame = CFrame.new(camera.CFrame.Position, v.CFrame.Position)})
+					tween:Play()
+					task.wait(0.5)
+					vim:SendKeyEvent(true, "Space", false, game)
+					local alreadyClicked = Instance.new("BoolValue", v)
+					alreadyClicked.Name = "alreadyClicked"
+
+				end     
+			end
+		end
+end
