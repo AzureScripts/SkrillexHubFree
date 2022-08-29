@@ -32,6 +32,7 @@ Main.Parent = SkrillexFree
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.Position = UDim2.new(0.599604249, 0, 0.351233661, 0)
 Main.Size = UDim2.new(0, 357, 0, 251)
+Main.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 
 AutoKey.Name = "AutoKey"
 AutoKey.Parent = Main
@@ -77,9 +78,6 @@ TextLabel_2.Text = "Skrillex#6300"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 14.000
 
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(44, 44, 44)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(121, 121, 121))}
-UIGradient_2.Parent = Main
-
 AutoMeditate.Name = "AutoMeditate"
 AutoMeditate.Parent = Main
 AutoMeditate.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
@@ -113,7 +111,6 @@ TextLabel_3.Text = "Auto Meditate (Put Manual)"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 10.000
 TextLabel_3.TextWrapped = true
-
 for _, v in pairs(SkrillexFree:GetDescendants()) do
 	
 	if not v:IsA("TextLabel") then
