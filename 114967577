@@ -40,7 +40,7 @@ Tab:AddToggle({
 })
 
 Tab:AddToggle({
-	Name = "Auto Time Chamber Key (Does not auto eat or auto stop)",
+	Name = "Auto Time Chamber Key (Does not auto stop)",
 	Default = false,
 	Callback = function(Value)
 		autKey = Value
